@@ -1,29 +1,26 @@
-.grid {
+.newUser {
     height: 96vh;
     padding-top: 55px;
-    .paperStyle {
-        padding: 50px;
+    .styleForm {
+        padding: 50px; 
         width: 360px; 
-        margin: 20px auto;
-        .avatarStyle {
+        margin: 48px auto;
+        .avatar {
             background-color: rgb(156, 45, 156);
         }
         h1 {
-            padding: 20px 0 40px 0;
+            padding: 20px 0 40px 0; 
         }
         .btn {
             background-color: rgb(156, 45, 156); 
             margin: 20px 0; 
         }
-        .typography {
-            padding-bottom: 10px;
-        }
     }
 }
 @media screen and (min-width: 1024px) {
-    .grid {
-    .paperStyle {
+.newUser {
+    .styleForm {
         width: 500px;
-        }
     }
+}
 }

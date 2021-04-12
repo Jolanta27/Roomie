@@ -1,0 +1,33 @@
+.grid {
+    height: 96vh;
+    padding-top: 55px;
+    .paperStyle {
+        padding: 50px;
+        width: 360px; 
+        height: 70vh;
+        margin: 20px auto;
+        .avatarStyle {
+            background-color: rgb(156, 45, 156);
+        }
+        h1 {
+            padding-top: 20px;
+            padding-bottom: 40px;
+        }
+        .btn {
+            margin: 8px 0; 
+            background-color: rgb(156, 45, 156); 
+            margin-top: 20px; 
+            margin-bottom: 20px;
+        }
+        .typography {
+            padding-bottom: 10px;
+        }
+    }
+}
+@media screen and (min-width: 1024px) {
+    .grid {
+    .paperStyle {
+        width: 500px;
+        }
+    }
+}

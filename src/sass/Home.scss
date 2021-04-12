@@ -47,8 +47,7 @@ header {
            color: $color;
            font-size: 35px;
            text-align: center;
-           padding: 5px 10px 15px 5px;
-           
+           padding: 5px 10px 15px 5px;      
        }
     }
     .violet {
@@ -79,7 +78,6 @@ header {
                     color: rgb(177, 175, 175);
                 }
                 input[type=submit] {
-                    
                     padding: 10px 15px;
                     margin-left: 5px;
                     border-radius: 5px;
@@ -98,12 +96,11 @@ header {
         }
     }
 }
-.section_two {
-    
+.section_two { 
     h1 {
-        color: $color;
         font-size: 35px;
         text-align: center;
+        padding-top: 50px;
     }
     p {
         font-size: 25px;
@@ -168,13 +165,13 @@ header {
         }
     }
 .section_two {
+    padding-top: 100px;
     height: 100vh;
     line-height: 100px;
     margin-left: 10px;
     margin-right: 10px;
     h1 {
         font-size: 45px;
-        padding-top: 50px;
     }
     p {
         font-size: 38px;

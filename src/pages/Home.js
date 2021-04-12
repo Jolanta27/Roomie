@@ -37,7 +37,7 @@ function Home() {
         </div>
     </section>
     <section className="section_two">
-        <h1>Populære byer</h1>
+        <h1 className="intro">Populære byer</h1>
             <div className="pictures">
                 <div>
                 <p>Oslo</p>

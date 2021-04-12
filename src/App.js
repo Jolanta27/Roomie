@@ -24,7 +24,7 @@ function App() {
                 <Route path="/Login" component={Login} />
                 <Route path="/NewUser" component={NewUser} />
       </Switch>
-      <p>{!data ? "Loading..." : data }</p>
+      {/*<p>{!data ? "Loading..." : data }</p>*/}
     </Router>
     </DocumentTitle>
     </>

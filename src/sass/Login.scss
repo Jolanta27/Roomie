@@ -1,29 +1,30 @@
-.grid {
-    height: 96vh;
-    padding-top: 55px;
-    .paperStyle {
-        padding: 50px;
-        width: 360px; 
-        margin: 20px auto;
-        .avatarStyle {
-            background-color: rgb(156, 45, 156);
-        }
-        h1 {
-            padding: 20px 0 40px 0;
-        }
-        .btn {
-            background-color: rgb(156, 45, 156); 
-            margin: 20px 0; 
-        }
-        .typography {
-            padding-bottom: 10px;
+    .grid {
+        height: 96vh;
+        padding-top: 55px;
+        .paper-style {
+            padding: 50px;
+            width: 360px; 
+            margin: 20px auto;
+            .avatar-style {
+                background-color: rgb(156, 45, 156);
+            }
+            h1 {
+                padding: 20px 0 40px 0;
+            }
+            .btn {
+                background-color: rgb(156, 45, 156); 
+                margin: 20px 0; 
+            }
+            .typography {
+                padding-bottom: 10px;
+            }
         }
     }
-}
-@media screen and (min-width: 1024px) {
+
+    @media screen and (min-width: 1024px) {
     .grid {
-    .paperStyle {
-        width: 500px;
+        .paper-style {
+            width: 500px;
         }
     }
 }

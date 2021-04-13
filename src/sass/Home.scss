@@ -4,188 +4,198 @@ $color: rgb(156, 45, 156);
     display: flex;
     align-items: center;
 }
-header {
-   @include flex;
-    justify-content: space-between;
-    margin: 10px 0;
-    h1 {
-        font: {
-            family: 'Redressed', cursive;
-            size: 25px;
-        }
-        margin-left: 30px;
-        color: $color;
-    }
-    nav {
-         a {
-        text-decoration: none;
-        color: $color;
-        font: {
-            size: 15px;
-            family: $font-primary;
-        }
-        padding: 10px;
-        margin: 10px;
-        border: 2px solid $color;
-        border-radius: 25px;
-        &:hover {
-            color: white;
-            background-color: $color;
+
+    header {
+        justify-content: space-between;
+        margin: 10px 0;
+        @include flex;
+
+        h1 {
+            font: {
+                family: 'Redressed', cursive;
+                size: 25px;
             }
+            margin-left: 30px;
+            color: $color;
         }
-    }
-}
-.section_one {
-    height: 100vh;
-    .white {
-       img.people {
-           max-width: 70%;
-           display: block;
-           margin: 80px auto 50px auto;
-       }
-       h1 {
-           color: $color;
-           font-size: 35px;
-           text-align: center;
-           padding: 5px 10px 15px 5px;      
-       }
-    }
-    .violet {
-        background-color: $color;
-        height: 45%;
-        form {
-            h1 {
+
+        nav {
+            a {
+            text-decoration: none;
+            color: $color;
+            font: {
+                size: 15px;
+                family: $font-primary;
+            }
+            padding: 10px;
+            margin: 10px;
+            border: 2px solid $color;
+            border-radius: 25px;
+            &:hover {
                 color: white;
-                font-size: 30px;
-                text-align: center;
-                padding-top: 100px;
+                background-color: $color;
+                }
             }
-            label {
-                margin: 15px;
-                height: 130px;
-                line-height: 130px;
-                input[type=text] {
-                    width: 300px;
-                    padding: 10px;
-                    margin: auto;
-                    font-size: 20px;
-                    outline: none;
-                    border: none;
-                    border-radius: 5px;
-                    color: $color;
+        }
+    }
+
+    .section-one {
+        height: 100vh;
+        .white {
+        img.people {
+            max-width: 70%;
+            display: block;
+            margin: 80px auto 50px auto;
+        }
+        h1 {
+            color: $color;
+            font-size: 35px;
+            text-align: center;
+            padding: 5px 10px 15px 5px;      
+        }
+        }
+
+        .violet {
+            background-color: $color;
+            height: 45%;
+            form {
+                h1 {
+                    color: white;
+                    font-size: 30px;
+                    text-align: center;
+                    padding-top: 100px;
                 }
-                input::placeholder {
-                    color: rgb(177, 175, 175);
-                }
-                input[type=submit] {
-                    padding: 10px 15px;
-                    margin-left: 5px;
-                    border-radius: 5px;
-                    outline: none;
-                    border: none;
-                    font-size: 20px; 
-                    color: $color;
-                    background-color: white;  
-                    &:hover {
-                        background-color: $color;
-                        color: white;
-                        border: 2px solid white;
+                label {
+                    margin: 15px;
+                    height: 130px;
+                    line-height: 130px;
+                    input[type=text] {
+                        width: 300px;
+                        padding: 10px;
+                        margin: auto;
+                        font-size: 20px;
+                        outline: none;
+                        border: none;
+                        border-radius: 5px;
+                        color: $color;
+                    }
+                    input::placeholder {
+                        color: rgb(177, 175, 175);
+                    }
+                    input[type=submit] {
+                        padding: 10px 15px;
+                        margin-left: 5px;
+                        border-radius: 5px;
+                        outline: none;
+                        border: none;
+                        font-size: 20px; 
+                        color: $color;
+                        background-color: white;  
+                        &:hover {
+                            background-color: $color;
+                            color: white;
+                            border: 2px solid white;
+                        }
                     }
                 }
             }
         }
     }
-}
-.section_two { 
-    h1 {
-        font-size: 35px;
-        text-align: center;
-        padding-top: 50px;
-    }
-    p {
-        font-size: 25px;
-        text-align: center;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-    img {
-        display: block;
-        max-width: 400px;
-        margin: 10px auto;
 
-    }
-}
-@media screen and (max-width: 768px) {}
-@media screen and (min-width: 1024px) {
-header {
-    h1 {
-        font-size: 45px;
-    }
-    nav {
-        a {
-            font-size: 20px;
-            padding: 20px;
-            border: 3px solid $color;
-        }
-    }
-}
-.section_one {
-    display: flex;
-    flex-grow: 1 1;
-    .white {
-        flex-basis: 50%;
+    .section-two { 
         h1 {
-        font-size: 45px;
+            font-size: 35px;
+            text-align: center;
+            padding-top: 50px;
+        }
+        p {
+            font-size: 25px;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        img {
+            display: block;
+            max-width: 400px;
+            margin: 10px auto;
+
         }
     }
-    .violet {
-       height: 100%;
-       flex-basis: 50%;
-       form {
-           margin-top: 80px;
-           h1 {
-               font-size: 45px;
-               margin-bottom: 50px;
-           }
-           label {
-               margin-left: 100px;
-            input[type=text] {
-                width: 550px;
-                padding: 30px;
-                text-align: center;
-                font-size: 30px;
+
+    @media screen and (max-width: 768px) {}
+    @media screen and (min-width: 1024px) {
+
+    header {
+        h1 {
+            font-size: 45px;
+        }
+        nav {
+            a {
+                font-size: 20px;
+                padding: 20px;
+                border: 3px solid $color;
             }
-            input[type=submit] {
-                font-size: 30px;
-                padding: 30px;
-                
-                }
-           }
-       }
         }
     }
-.section_two {
-    padding-top: 100px;
-    height: 100vh;
-    line-height: 100px;
-    margin-left: 10px;
-    margin-right: 10px;
-    h1 {
-        font-size: 45px;
-    }
-    p {
-        font-size: 38px;
-    }
-    .pictures {
+
+    .section-one {
         display: flex;
-       div {
-           margin: auto;
-           img {
-               height: 300px;
-           }
-       } 
+        flex-grow: 1 1;
+        .white {
+            flex-basis: 50%;
+            h1 {
+            font-size: 45px;
+            }
+        }
+        .violet {
+        height: 100%;
+        flex-basis: 50%;
+        form {
+            margin-top: 80px;
+            h1 {
+                font-size: 45px;
+                margin-bottom: 50px;
+            }
+            label {
+                margin-left: 100px;
+                input[type=text] {
+                    width: 550px;
+                    padding: 30px;
+                    text-align: center;
+                    font-size: 30px;
+                }
+                input[type=submit] {
+                    font-size: 30px;
+                    padding: 30px;
+                    
+                    }
+                }
+            }
+        }
     }
-}
+
+    .section-two {
+        padding-top: 100px;
+        height: 100vh;
+        line-height: 100px;
+        margin-left: 10px;
+        margin-right: 10px;
+        h1 {
+            font-size: 45px;
+        }
+        p {
+            font-size: 38px;
+        }
+        .pictures {
+            display: flex;
+        div {
+            margin: auto;
+            img {
+                height: 300px;
+                }
+            } 
+        }
+    }
 }
 
 

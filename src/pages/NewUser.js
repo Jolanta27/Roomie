@@ -4,21 +4,21 @@ import PeopleIcon from '@material-ui/icons/People';
 import '../sass/NewUser.scss';
 import Footer from '../Footer';
 
-const NewUser = () => {
+function NewUser() {
     return (
         <>
-        <Grid className="newUser">
-            <Paper elevation={10} className="styleForm">
+        <Grid className="new-user">
+            <Paper elevation={10} className="style-form">
                 <Grid align="center">
                 <Avatar className="avatar"><PeopleIcon /></Avatar>
                 <h1>Ny bruker</h1>
                 </Grid>
-                <TextField label="Fullt navn" fullWidth required/>
-                <TextField label="E-mail" fullWidth required/>
-                <TextField label='Passord' type="password" placeholder='Passord' fullWidth required/>
-                <TextField label='Bekreft Passord' type="password" placeholder='Bekreft Passord' fullWidth required/>
+                <TextField label="Fullt navn" fullWidth required />
+                <TextField label="E-mail" fullWidth required />
+                <TextField label='Passord' type="password" placeholder='Passord' fullWidth required />
+                <TextField label='Bekreft Passord' type="password" placeholder='Bekreft Passord' fullWidth required />
                 <FormControlLabel
-                    control={
+                    control = {
                     <Checkbox
                         name="checkedB"
                         color="primary"
@@ -27,9 +27,9 @@ const NewUser = () => {
                     label="Jeg aksepterer deres handlingsbetingelser"
                 />
                    <Button className="btn" type="submit" color="primary"  variant="contained" fullWidth>Opprett bruker</Button>
-            </Paper>
+            </Paper>  
         </Grid>
-    <Footer />
+        <Footer /> 
         </>
     )
 }

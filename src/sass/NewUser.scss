@@ -1,26 +1,27 @@
-.newUser {
-    height: 96vh;
-    padding-top: 55px;
-    .styleForm {
-        padding: 50px; 
-        width: 360px; 
-        margin: 48px auto;
-        .avatar {
-            background-color: rgb(156, 45, 156);
-        }
-        h1 {
-            padding: 20px 0 40px 0; 
-        }
-        .btn {
-            background-color: rgb(156, 45, 156); 
-            margin: 20px 0; 
+    .new-user {
+        height: 96vh;
+        padding-top: 55px;
+        .style-form {
+            padding: 50px; 
+            width: 360px; 
+            margin: 48px auto;
+            .avatar {
+                background-color: rgb(156, 45, 156);
+            }
+            h1 {
+                padding: 20px 0 40px 0; 
+            }
+            .btn {
+                background-color: rgb(156, 45, 156); 
+                margin: 20px 0; 
+            }
         }
     }
-}
-@media screen and (min-width: 1024px) {
-.newUser {
-    .styleForm {
-        width: 500px;
+
+    @media screen and (min-width: 1024px) {
+    .new-user {
+        .style-form {
+            width: 500px;
+        }
     }
-}
 }

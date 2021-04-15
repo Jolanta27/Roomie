@@ -23,7 +23,7 @@
         }
     }
 
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: $deskop) {
     .grid {
         .paper-style {
             width: 500px;

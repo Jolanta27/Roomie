@@ -11,21 +11,23 @@ import Footer from '../components/Footer';
 function Home() {
     return (
         <>
+
         <header>
-            <h1>Roomie</h1>
-            <nav>
+            <h1 className="logo">Roomie</h1>
+            <nav className="nav">
                 <Link to="/Login">Logg inn</Link>
                 <Link to="/NewUser">Opprett bruker</Link>
             </nav>   
         </header>
-        <section className="section-one">
-            <div className="white">
+
+        <section className="first-section">
+            <div className="left-side">
                 <img className="people" src={people} alt="friends"/>
-                <h1>Vi hjelper deg å finne de riktige folka!</h1>
+                <h1 className="img_intro">Vi hjelper deg å finne de riktige folka!</h1>
             </div>
-            <div className="violet">
+            <div className="right-side">
                 <form>
-                    <h1>Finn den perfekte matchen din</h1>
+                    <h1 className="right-side_intro">Finn den perfekte matchen din</h1>
                     <label>
                         <input type="text" placeholder="Tast inn by eller postnummer..." />
                         <input type="submit" value="Søk" />
@@ -33,8 +35,9 @@ function Home() {
                 </form>
             </div>
         </section>
-        <section className="section-two">
-            <h1 className="intro">Populære byer</h1>
+
+        <section className="second-section">
+            <h1 className="second-section_intro">Populære byer</h1>
                 <div className="pictures">
                     <div><p>Oslo</p><img src={oslo} alt="oslo"/></div>
                     <div><p>Bergen</p><img src={bergen} alt="bergen"/></div>
@@ -42,6 +45,7 @@ function Home() {
                     <div><p>Stavanger</p><img src={stavanger} alt="stavanger"/></div>
                 </div>
         </section>
+
         <Footer />   
         </>
     )

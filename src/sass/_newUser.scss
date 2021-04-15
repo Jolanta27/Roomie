@@ -20,7 +20,7 @@
         }
     }
 
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: $deskop) {
     .new-user {
         .style-form {
             width: 500px;

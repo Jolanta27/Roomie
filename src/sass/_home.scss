@@ -1,10 +1,5 @@
-$font-primary: 'Roboto', sans-serif;
-$color: rgb(156, 45, 156);
-@mixin flex {
-    display: flex;
-    align-items: center;
-}
-
+@import 'mixins';
+@import '_variables';
     header {
         justify-content: space-between;
         margin: 10px 0;

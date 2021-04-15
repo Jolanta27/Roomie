@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import './App.scss';
+import '../src/sass/index.scss';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import NewUser from './pages/NewUser';
@@ -14,7 +14,7 @@ function App() {
     fetch("/api")
     .then((res) => res.json())
     .then((data) => setData(data.message));
-  }, []);
+  }, []); 
   return (
     <>
     <DocumentTitle title="Finn den råeste roomie med oss">

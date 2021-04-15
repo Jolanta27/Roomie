@@ -1,8 +1,8 @@
 import React from 'react';
 import {  Grid, Paper, Avatar, TextField, FormControlLabel, Checkbox, Button } from '@material-ui/core';
 import PeopleIcon from '@material-ui/icons/People';
-import '../sass/NewUser.scss';
-import Footer from '../Footer';
+import '../sass/_newUser.scss';
+import Footer from '../components/Footer';
 
 function NewUser() {
     return (

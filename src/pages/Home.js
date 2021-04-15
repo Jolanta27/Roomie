@@ -1,12 +1,12 @@
 import React from "react";
 import {Link} from 'react-router-dom';
-import '../sass/Home.scss';
+import '../sass/_home.scss';
 import people from '../img/friends.jpeg';
 import oslo from '../img/oslo.jpeg';
 import bergen from '../img/bergen.jpeg';
 import trondheim from '../img/trondheim.jpeg';
 import stavanger from '../img/stavanger.jpeg';
-import Footer from '../Footer';
+import Footer from '../components/Footer';
 
 function Home() {
     return (

@@ -1,10 +1,10 @@
 import { Avatar, Button, Grid, Paper, TextField, Typography, Link } from '@material-ui/core';
 import React from 'react';
-import '../sass/Login.scss';
+import '../sass/_login.scss';
 import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Checkbox from '@material-ui/core/Checkbox';
-import Footer from '../Footer';
+import Footer from '../components/Footer';
 
 function Login() {
     return (

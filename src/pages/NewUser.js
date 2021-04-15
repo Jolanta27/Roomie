@@ -11,7 +11,7 @@ function NewUser() {
             <Paper elevation={10} className="style-form">
                 <Grid align="center">
                 <Avatar className="avatar"><PeopleIcon /></Avatar>
-                <h1>Ny bruker</h1>
+                <h1 className="avatar_intro">Ny bruker</h1>
                 </Grid>
                 <TextField label="Fullt navn" fullWidth required />
                 <TextField label="E-mail" fullWidth required />

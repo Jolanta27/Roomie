@@ -1,4 +1,4 @@
-@import '_variables';
+@import 'variables';
 
     .new-user {
         height: 96vh;
@@ -10,7 +10,7 @@
             .avatar {
                 background-color: $color;
             }
-            h1 {
+            .avatar_intro {
                 padding: 20px 0 40px 0; 
             }
             .btn {

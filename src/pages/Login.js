@@ -13,7 +13,7 @@ function Login() {
             <Paper elevation={10} className="paper-style">
                 <Grid align="center">
                 <Avatar className="avatar-style"><LockOutlinedIcon/></Avatar>
-                    <h1>Logg inn</h1>
+                    <h1 className="login-logo">Logg inn</h1>
                 </Grid>
                 <TextField label='Email' placeholder='Email' fullWidth required />
                 <TextField label='Passord' type="password" placeholder='Passord' fullWidth required />
@@ -23,8 +23,7 @@ function Login() {
                         name="checkedB"
                         color="primary"
                         />
-                    }
-                        label="Husk meg"
+                    } label="Husk meg"
                 />
                 <Button type="submit" color="primary"  variant="contained" className="btn" fullWidth>Logg inn</Button>
                     <Typography className="typography"> 

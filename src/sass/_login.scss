@@ -1,29 +1,30 @@
+
 @import '_variables';
 
-    .grid {
-        height: 96vh;
-        padding-top: 55px;
-        .paper-style {
-            padding: 50px;
-            width: 360px; 
-            margin: 20px auto;
-            .avatar-style {
-                background-color: $color;
-            }
-            h1 {
-                padding: 20px 0 40px 0;
-            }
-            .btn {
-                background-color: $color;
-                margin: 20px 0; 
-            }
-            .typography {
-                padding-bottom: 10px;
-            }
+.grid {
+    height: 96vh;
+    padding-top: 55px;
+    .paper-style {
+        padding: 50px;
+        width: 360px; 
+        margin: 20px auto;
+        .avatar-style {
+            background-color: $color;
+        }
+        .login-logo {
+            padding: 20px 0 30px 0;
+        }
+        .btn {
+            background-color: $color;
+            margin: 20px 0; 
+        }
+        .typography {
+            padding-bottom: 10px;
         }
     }
+}
 
-    @media screen and (min-width: $deskop) {
+@media screen and (min-width: $deskop) {
     .grid {
         .paper-style {
             width: 500px;

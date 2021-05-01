@@ -5,8 +5,12 @@
 /.pnp
 .pnp.js
 
+# temporary files
+/tmp
+
 # testing
 /coverage
+/target
 
 # production
 /build
@@ -21,3 +25,12 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+

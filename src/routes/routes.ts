@@ -2,10 +2,10 @@ export const getBaseUrl = () => '/';
 
 const main = {
     newUser: {
-        path: `${getBaseUrl()}/NewUser`,
+        path: `${getBaseUrl()}NewUser`,
     },
     login: {
-        path: `${getBaseUrl()}/Login`,
+        path: `${getBaseUrl()}Login`,
     },
 };
 

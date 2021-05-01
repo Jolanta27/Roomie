@@ -1,0 +1,38 @@
+@import 'src/sass/variables.scss';
+
+.grid {
+  height: 96vh;
+  padding-top: 55px;
+
+  .paperStyle {
+    padding: 50px;
+    width: 360px;
+    margin: 20px auto;
+
+    .avatarStyle {
+      background-color: $color;
+    }
+
+    .loginLogo {
+      padding: 20px 0 30px 0;
+    }
+
+    .btn {
+      background-color: $color;
+      margin: 20px 0;
+    }
+
+    .typography {
+      padding-bottom: 10px;
+    }
+  }
+}
+
+@media screen and (min-width: $deskop) {
+  
+  .grid {
+    .paperStyle {
+      width: 500px;
+    }
+  }
+}

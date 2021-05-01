@@ -1,5 +1,6 @@
-@import 'mixins';
-@import 'variables';
+@import 'src/sass/mixins.scss';
+@import 'src/sass/variables.scss';
+
     header {
         justify-content: space-between;
         margin: 10px 0;
@@ -33,29 +34,29 @@
         }
     }
 
-    .first-section {
+    .firstSection {
         height: 100vh;
     }
 
-    .left-side .people {
+    .leftSide .people {
         max-width: 70%;
         display: block;
         margin: 80px auto 50px auto;
     }
 
-    .img_intro {
+    .imgIntro {
         color: $color;
         font-size: 35px;
         text-align: center;
         padding: 5px 10px 15px 5px; 
     }      
 
-    .right-side {
+    .rightSide {
         background-color: $color;
         height: 45%;
     } 
 
-    .right-side_intro {
+    .rightSideIntro {
         color: white;
         font-size: 30px;
         text-align: center;
@@ -96,7 +97,7 @@
         }
     }
       
-    .second-section_intro {
+    .secondSectionIntro {
         font-size: 35px;
         text-align: center;
         padding-top: 50px;
@@ -129,21 +130,21 @@
         }
     }
 
-    .first-section {
+    .firstSection {
         display: flex;
         flex-grow: 1 1;
     }
 
-    .left-side {
+    .leftSide {
         flex-basis: 50%;
         margin-top: 40px;
     }
 
-    .img_intro {
+    .imgIntro {
         font-size: 45px;
     }
 
-    .right-side {
+    .rightSide {
         height: 100%;
         flex-basis: 50%;
     }
@@ -152,7 +153,7 @@
         margin-top: 80px;
     }
 
-    .right-side_intro {
+    .rightSideIntro {
         font-size: 45px;
         margin-bottom: 50px;
     }
@@ -171,7 +172,7 @@
         }
     }
 
-    .second-section {
+    .secondSection {
         padding-top: 100px;
         height: 100vh;
         line-height: 100px;
@@ -179,7 +180,7 @@
         margin-right: 10px;
     }
 
-    .second-section_intro {
+    .secondSectionIntro {
         font-size: 45px;
     }
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 import people from '../../../../assets/img/friends.jpeg';
 import oslo from '../../../../assets/img/oslo.jpeg';
@@ -7,11 +8,14 @@ import bergen from '../../../../assets/img/bergen.jpeg';
 import trondheim from '../../../../assets/img/trondheim.jpeg';
 import stavanger from '../../../../assets/img/stavanger.jpeg';
 import { routes } from '../../../../routes/routes';
+import { LangSelector } from '../../../components/LangSelector/LangSelector.component';
+import { TraslationKeywords } from '../../../../translations/types';
 
 import classes from './Home.module.scss';
 
 export const Home: React.FC = () => {
     const { main } = routes;
+    const { t } = useTranslation();
 
     return (
         <>
@@ -19,9 +23,10 @@ export const Home: React.FC = () => {
                 <h1 className={classes.logo}>
                     Roomie
                 </h1>
+                <LangSelector />
                 <nav className={classes.nav}>
                     <Link to={main.login.path}>
-                        Logg inn
+                        {t(TraslationKeywords.Login)}
                     </Link>
                     <Link to={main.newUser.path}>
                         Opprett bruker
